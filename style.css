@@ -22,6 +22,7 @@ body{
 .menu{
   background-color:#417aa8;
   height:50px;
+  line-height:50px;
   position:relative;
   width:90%;
   margin:0 auto;
@@ -41,6 +42,11 @@ body{
   text-decoration:none;
 }
 
+.menu ul li a:hover {
+    backgroun-color:#4b88bb;
+    display:block;
+}
+
 .content{
   width:90%;
   margin:auto;
@@ -51,7 +57,7 @@ body{
 }
 
 .border{
-  border:2px solid #4887B9
+  border:2px solid #4887B9;
   margin-top:1pc;
   padding-bottom:1pc;
   padding-left:2pc;
@@ -74,7 +80,7 @@ body{
   height:420px;
 }
 
-.undercover{
+.undercor{
   text-decoration:none;
 }
 
@@ -86,9 +92,4 @@ body{
   background:#417aa8;
   color:#fff;
   margin-bottom: 1pc;
-}
-
-.menu ul li a:hover {
-  background-color:#4b88bb;
-  display:block;
 }
