@@ -1,73 +1,409 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-    <title>Delayota</title>
-    <link rel="stylesheet" href="style.css">
- </head>
- <link rel="stylesheet" href="style.css">
- <body>
-  <div Class="header">
-   <div class="jarak">
-    <h2>Belajar Membuat Layout dengan HTML dan CSS</h2>
-   </div>
-  </div>
-  <div class="menu">
-   <ul>
-     <li><a href="index.html">Home</a></li>
-     <li><a href="about.html">About</a></li>
-     <li><a href="blog.html">Blog</a></li>
-     <li><a href="contact.html">Contact</a></li>
-   </ul>
-  </div>
- 
- </html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xmas Countdown - Christmas Countdown Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="templatemo-605-xmas-countdown.css">
+<!--
 
-<div class="content">
-    <div class="jarak">
-        <!-- kiri -->
-        <div class="kiri">
-            <!-- blog -->
-            <div class="border">
-                <div class="jarak">
-                    <h3>Lorem Ipsum</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing</p>
-                    <button class="btn">Read More ..</button>
+TemplateMo 605 Xmas Countdown
+
+https://templatemo.com/tm-605-xmas-countdown
+
+-->
+</head>
+<body>
+    <!-- Background -->
+    <div class="grid-bg"></div>
+    <div class="particles" id="particles"></div>
+
+    <!-- Header -->
+    <header id="header">
+        <a href="#hero" class="logo">
+            <div class="logo-icon">🎄</div>
+            <span class="logo-text">Delayota<span>Countdown</span></span>
+        </a>
+        <nav id="nav">
+            <a href="#hero">Home</a>
+            <a href="#about">Tentang</a>
+            <a href="#events">Event</a>
+            <a href="#traditions">Tradisi</a>
+            <a href="#newsletter" class="nav-cta">Subscribe</a>
+            <p id="userInfo">Belum Login</p>
+            <div id="authArea">
+                <button onclick="goLogin()">Login</button>
+            </div>
+        </nav>
+        <div class="nav-toggle" id="navToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-badge">
+            <span class="dot"></span>
+            Live Countdown Active
+        </div>
+        <h1>Event<br><span class="gradient">Countdown</span></h1>
+        <p class="hero-subtitle">Setiap detik membawa kita lebih dekat dengan acara yang paling ajaib dalam setahun</p>
+        
+        <div class="countdown-wrapper">
+            <div class="countdown" id="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-number" id="days">00</span>
+                    <span class="countdown-label">Hari</span>
+                </div>
+                <span class="countdown-colon">:</span>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="hours">00</span>
+                    <span class="countdown-label">Jam</span>
+                </div>
+                <span class="countdown-colon">:</span>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="minutes">00</span>
+                    <span class="countdown-label">Menit</span>
+                </div>
+                <span class="countdown-colon">:</span>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="seconds">00</span>
+                    <span class="countdown-label">Detik</span>
                 </div>
             </div>
-            <!-- end blog -->
 
-            <!-- blog -->
-            <div class="border">
-                <div class="jarak">
-                    <h3>Lorem Ipsum</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing</p>
-                    <button class="btn">Read More ..</button>
+            <div class="target-date">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                67 Agustus, 2026 pada pukul 18.00 WIB
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="section-header">
+            <span class="section-tag">Tentang Kami</span>
+            <h2 class="section-title">Keajaiban Event</h2>
+            <p class="section-subtitle">Menghadiahkan tradisi, menciptakan kenangan, dan menyebarkan kebahagiaan</p>
+        </div>
+        <div class="about-grid">
+            <div class="about-image">
+                <div class="about-image-stack">
+                    <div class="about-img-item img-1">
+                        <img src="images/christmas-pic-21.jpg" alt="Christmas Tree">
+                    </div>
+                    <div class="about-img-item img-2">
+                        <img src="images/christmas-pic-22.jpg" alt="Christmas Lights">
+                    </div>
+                    <div class="about-img-item img-3">
+                        <img src="images/christmas-pic-23.jpg" alt="Christmas Ornaments">
+                    </div>
                 </div>
             </div>
-            <!-- end blog -->
-        </div>
-        <!-- kiri -->
-
-        <!-- kanan -->
-        <div class="kanan">
-            <div class="jarak">
-                <h3>CATEGORY</h3>
-                <hr/>
-                <p><a href="#" class="undecor">HTML</a></p>
-                <p><a href="#" class="undecor">CSS</a></p>
-                <p><a href="#" class="undecor">BOOTSTRAP</a></p>
-                <p><a href="#" class="undecor">PHP</a></p>
-                <p><a href="#" class="undecor">MYSQL</a></p>
-                <p><a href="#" class="undecor">Jquery</a></p>
-                <p><a href="#" class="undecor">Ajax</a></p>
+            <div class="about-content">
+                <h3>Sebuah waktu untuk <span>berbagi</span> & merayakan</h3>
+                <p>Event ini adalah kesempatan untuk bersama-sama merayakan dan menciptakan kenangan yang tak terlupakan.</p>
+                <p>Melalui berbagai aktivitas dan kegiatan yang diselenggarakan, kami berharap dapat menciptakan momen yang menyenangkan dan bermakna bagi semua peserta.</p>
+                <div class="about-features">
+                    <div class="about-feature">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        Tradisi Ikapakci
+                    </div>
+                    <div class="about-feature">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        Bertukar Kado
+                    </div>
+                    <div class="about-feature">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        Berbagi Kasih
+                    </div>
+                    <div class="about-feature">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        Musik Tradisional
+                    </div>
+                </div>
+                <div class="about-templatemo">
+                    <p>Semua acara ini dihadirkan oleh tim kami yang berdedikasi untuk memberikan pengalaman yang tak terlupakan.</p>
+                    <a href="https://sman8yogya.sch.id" target="_blank" class="btn-templatemo">
+                        <span>Kunjungi Delayota</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="7" y1="17" x2="17" y2="7"></line>
+                            <polyline points="7 7 17 7 17 17"></polyline>
+                        </svg>
+                    </a>
+                </div>
             </div>
         </div>
-        <!-- kanan -->
-    </div>
-</div>
+    </section>
 
-<div class="footer">
-    <div class="jarak">
-        <p>copyright 2021 codekop all reserved</p>
-    </div>
-</div>
+    <!-- Events Section -->
+    <section class="events" id="events">
+        <div class="section-header">
+            <span class="section-tag">Upcoming</span>
+            <h2 class="section-title">Event</h2>
+            <p class="section-subtitle">Jadwal acara yang akan datang</p>
+        </div>
+        <div class="events-grid">
+            <div class="event-card">
+                <div class="event-image">
+                    <img src="images/christmas-pic-31.jpg" alt="Carol Night">
+                    <div class="event-date-badge">
+                        <div class="day">67</div>
+                        <div class="month">Agustus</div>
+                    </div>
+                </div>
+                <div class="event-content">
+                    <h3>Malam Penuh Kenangan</h3>
+                    <p>Melalui berbagai aktivitas dan kegiatan yang diselenggarakan, kami berharap dapat menciptakan momen yang menyenangkan dan bermakna bagi semua peserta.</p>
+                    <div class="event-meta">
+                        <span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            7:00 PM
+                        </span>
+                        <span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            Delayota Hall
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="event-card">
+                <div class="event-image">
+                    <img src="images/christmas-pic-32.jpg" alt="Cookie Exchange">
+                    <div class="event-date-badge">
+                        <div class="day">67</div>
+                        <div class="month">Agustus</div>
+                    </div>
+                </div>
+                <div class="event-content">
+                    <h3>Bertukar Kado</h3>
+                    <p>Acara bertukar kado yang penuh kebahagiaan dan kehangatan keluarga.</p>
+                    <div class="event-meta">
+                        <span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            3:00 PM
+                        </span>
+                        <span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            Delayota Hall
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="event-card">
+                <div class="event-image">
+                    <img src="images/christmas-pic-33.jpg" alt="Candlelight Vigil">
+                    <div class="event-date-badge">
+                        <div class="day">67</div>
+                        <div class="month">Agustus</div>
+                    </div>
+                </div>
+                <div class="event-content">
+                    <h3>Malam Penuh Kehangatan</h3>
+                    <p>Melalui berbagai aktivitas dan kegiatan yang diselenggarakan, kami berharap dapat menciptakan momen yang menyenangkan dan bermakna bagi semua peserta.</p>
+                    <div class="event-meta">
+                        <span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            9:00 PM
+                        </span>
+                        <span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            Delayota Hall
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Traditions Section -->
+    <section class="traditions" id="traditions">
+        <div class="section-header">
+            <span class="section-tag">Cherished</span>
+            <h2 class="section-title">Tradisi</h2>
+            <p class="section-subtitle">Tradisi event Delayota</p>
+        </div>
+        <div class="traditions-grid">
+            <div class="tradition-card">
+                <div class="tradition-image">
+                    <img src="images/christmas-pic-41.jpg" alt="Decorating Tree">
+                </div>
+                <div class="tradition-content">
+                    <div class="tradition-number">01</div>
+                    <h3>Decorating the Tree</h3>
+                    <p>Hanging ornaments collected over the years, each one telling its own story of Christmases past.</p>
+                    <a href="#" class="tradition-btn">
+                        <span>Learn More</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="tradition-card">
+                <div class="tradition-image">
+                    <img src="images/christmas-pic-42.jpg" alt="Gift Exchange">
+                </div>
+                <div class="tradition-content">
+                    <div class="tradition-number">02</div>
+                    <h3>Secret Gift Exchange</h3>
+                    <p>Finding the perfect gift for someone special, wrapped with love and anticipation.</p>
+                    <a href="#" class="tradition-btn">
+                        <span>Learn More</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="tradition-card">
+                <div class="tradition-image">
+                    <img src="images/christmas-pic-43.jpg" alt="Hot Cocoa">
+                </div>
+                <div class="tradition-content">
+                    <div class="tradition-number">03</div>
+                    <h3>Hot Cocoa Nights</h3>
+                    <p>Gathering by the fire with warm mugs, sharing stories as snow falls softly outside.</p>
+                    <a href="#" class="tradition-btn">
+                        <span>Learn More</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="tradition-card">
+                <div class="tradition-image">
+                    <img src="images/christmas-pic-44.jpg" alt="Christmas Feast">
+                </div>
+                <div class="tradition-content">
+                    <div class="tradition-number">04</div>
+                    <h3>Christmas Feast</h3>
+                    <p>Gathering around the table with family for a special meal and cherished conversations.</p>
+                    <a href="#" class="tradition-btn">
+                        <span>Learn More</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter" id="newsletter">
+        <div class="newsletter-container">
+            <div class="section-header" style="margin-bottom: 40px;">
+                <span class="section-tag">Stay Updated</span>
+                <h2 class="section-title">Bergabung dengan Kami</h2>
+            </div>
+            <p>Ikuti berita terbaru dan event-event menarik dari kami!</p>
+            <form class="newsletter-form" id="newsletterForm">
+                <input type="email" placeholder="Masukkan email Anda" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="#hero" class="logo">
+                    <div class="logo-icon">🎄</div>
+                    <span class="logo-text">Delayota<span>Countdown</span></span>
+                </a>
+                <p>Menyelenggarakan event dan tradisi liburan yang menghibur dan memperkuat semangat kebersamaan.</p>
+                <div class="footer-social">
+                    <a href="#" title="Facebook">f</a>
+                    <a href="#" title="Instagram">◎</a>
+                    <a href="#" title="Twitter">𝕏</a>
+                    <a href="#" title="YouTube">▶</a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Navigasi</h4>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#events">Event</a></li>
+                    <li><a href="#traditions">Tradisi</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Sumber</h4>
+                <ul>
+                    <li><a href="#">Ide Kado</a></li>
+                    <li><a href="#">Resep</a></li>
+                    <li><a href="#">Tips Dekorasi</a></li>
+                    <li><a href="#">Perencanaan Event</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="#">delayota@event.com</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Delayota Countdown. Designed by <a rel="nofollow" href="#" target="_blank">Gendhis Widya R.</a></p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+<script src="templatemo-605-countdown-scripts.js"></script>
+<script src="login/js/welcome.js"></script>
+</body>
+</html>
